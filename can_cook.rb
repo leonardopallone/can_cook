@@ -1,6 +1,6 @@
 can_cook = [
   
-  'beans',
+   'beans',
    'pizza',
    'orzo',
    'arepas ',
@@ -11,16 +11,17 @@ can_cook = [
 ]
 side_dish = [
 
-  'chilli',
-  'pepperoni',
-  'red pepper',
-  'ham',
-  'fries',
-  'chimichurri',
-  'dressing',
+   'chilli',
+   'pepperoni',
+   'red pepper',
+   'ham',
+   'fries',
+   'chimichurri',
+   'dressing'
 ]
 days_of_week = [
-   'Monday',
+
+    'Monday',
    
     'Tuesday',
   
@@ -30,23 +31,22 @@ days_of_week = [
     
     'Friday',
   
-    'Satrday',
+    'Saturday',
     
     'Sunday',
   
 ]
   days_of_week.each do |day|
   meal = can_cook.sample
-  day = days_of_week.sample
-  days_of_week.delete(meal)
   sides = side_dish.sample 
+  days = days
  
 
 
-   puts "we will eat #{meal}"
+   puts "You will eat #{meal}"
 
-   puts  "with side of #{sides}"
-   puts  "on #{day}"
+   puts  "With side of #{sides}"
+   puts  "<-- on #{day}-->"
 
    puts
 end
