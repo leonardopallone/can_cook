@@ -1,3 +1,16 @@
+def initialize
+  welcome
+end
+puts 
+def welcome 
+  puts "Welcome to my meal plan"
+  puts "To make your Meal Prep days easy I have created this simple program"
+  puts "so you don't have to think too much about your week planning."
+end
+welcome
+
+puts 
+
 can_cook = [
   
    'Pasta with side Salad',
@@ -9,16 +22,7 @@ can_cook = [
    'Chicken Salad with side of Green tortilla'
   
 ]
-# side_dish = [
 
-#    'chilli',
-#    'Salad',
-#    'red pepper',
-#    'ham',
-#    'fries',
-#    'chimichurri',
-#    'dressing'
-# ]
 days_of_week = [
 
     'Monday',
@@ -36,6 +40,17 @@ days_of_week = [
     'Sunday',
   
 ]
+# side_dish = [
+
+#    'chilli',
+#    'Salad',
+#    'red pepper',
+#    'ham',
+#    'fries',
+#    'chimichurri',
+#    'dressing'
+# ]
+
   days_of_week.each do |day|
 
     meal = can_cook.sample
